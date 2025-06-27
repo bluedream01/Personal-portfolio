@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+
+}
+
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* hide horizontal scroll only */
+  color:white;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* or a darker one if needed */
+    position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+  color:white;
+}
+.name{
+  font-weight: 100;
+  font-size: larger;
+}
+.buttons-nav{
+  display: flex;
+  justify-content: space-around;
+  gap:20px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+
+.hero {
+  height: 100vh; /* full screen */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1rem; /* ensures breathing space */
+}
+
+.hero-name{
+  color:white;
+  font-size: 120px;
+}
+.hero-details{
+  width: 600px;
+  text-align: center;
+}
+.About{
+  margin-bottom: 30px;
+}
+.About-details {
+  /* display: flex;
+  flex-direction: row;
+   /* or space-between, space-evenly, etc. */
+  /* align-items: center;      
+  padding: 2rem; */ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  height: 520px;
+  
+  padding: 0 16px;
+}
+.About-text{
+  text-align: center;
+  margin-bottom: 30px;
+}
+ .Tilted-card{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+} 
+/* .About-text-3{
+  width:50%
+} */
+ .About-text-2{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 100px;
+  padding-left: 50px;
+ } 
+ .project-holder{
+    padding: 10px 10px;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    margin-bottom: 20px;
+    
+}
+ .pro{
+   margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05); /* subtle glass effect */
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+ }
+ .project-image{
+     height:250px;
+    width:400px;
+     object-fit: cover;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+/* .project-image:hover{
+     transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+} */
+.basic{
+    /* text-align: center; */
+   color:whitesmoke;
+   padding:30px;
+}
+.pro:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.15);
+  border-color: white;
+}
+.error{
+  margin-bottom: 18px;
+}
+.icon{
+  margin: 5px;
+  margin-right: 8px;
+  color: white;
+}
+.grids{
+    padding: 50px 120px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.tech {
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tech:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+.Education {
+  padding: 60px 20px;
+  background-color: #0e0e0e; /* optional darker section */
+  color: white;
+  text-align: center;
+}
+
+.Edu {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.Edu:hover {
+  transform: translateY(-5px);
+}
+
+.Edu-college {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Edu-branch {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
