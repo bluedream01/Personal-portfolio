@@ -1,4 +1,4 @@
-import { useState,useRef } from "react";
+import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons"; // <-- Import the icon
 import GlareHover from "./blocks/Animations/GlareHover/GlareHover";
@@ -38,11 +38,21 @@ function App() {
         <nav className="navbar">
           <div className="name">Swpnanil Das</div>
           <div className="buttons-nav">
-            <div className="Home-button "><a href="#Home">Home</a></div>
-            <div className="about-button"><a href="#About">About</a></div>
-            <div className="Projects-button"><a href="#Project">Projects</a></div>
-            <div className="Education-button"><a href="#Education">Education</a></div>
-            <div className="Contact-button"><a href="#Contact">Contact</a></div>
+            <div className="Home-button ">
+              <a href="#Home">Home</a>
+            </div>
+            <div className="about-button">
+              <a href="#About">About</a>
+            </div>
+            <div className="Projects-button">
+              <a href="#Project">Projects</a>
+            </div>
+            <div className="Education-button">
+              <a href="#Education">Education</a>
+            </div>
+            <div className="Contact-button">
+              <a href="#Contact">Contact</a>
+            </div>
           </div>
         </nav>
         <div className="hero" id="Home">
@@ -73,10 +83,9 @@ function App() {
               // add specific props if using cube mode
             />  */}
             <div ref={containerRef} style={{ position: "relative" }}>
+              <h2 className="hero-title">HI, I'M</h2>
               <VariableProximity
-                label={
-                  "Swpnanil Das"
-                }
+                label={"Swpnanil Das"}
                 className={"variable-proximity-demo hero-name"}
                 fromFontVariationSettings="'wght' 400, 'opsz' 9"
                 toFontVariationSettings="'wght' 1000, 'opsz' 40"
@@ -130,7 +139,7 @@ function App() {
                 transition={{ duration: 1 }}
                 viewport={{ once: false }}
               >
-                AI/ML Engineer & Frontend Developer
+                Full Stack Web Developer
               </motion.h2>
               <motion.p
                 className="About-text-3"
@@ -139,16 +148,17 @@ function App() {
                 transition={{ duration: 1 }}
                 viewport={{ once: false }}
               >
-                I'm a passionate AI/ML engineer with over 2 years of experience
-                developing intelligent solutions and data-driven applications. I
-                specialize in designing and deploying machine learning models
-                that solve real-world problems, while also having a solid
-                foundation in frontend development to create intuitive and
-                responsive user interfaces. My approach blends deep technical
-                knowledge with creative problem-solving to build scalable and
-                impactful AI systems. I'm continuously exploring advancements in
-                artificial intelligence, machine learning frameworks, and modern
-                web technologies to stay ahead in this fast-evolving field.
+                I'm a passionate Full Stack Developer with over 2 years of
+                experience building dynamic, responsive web applications. I
+                specialize in creating intuitive and visually engaging user
+                interfaces using modern frontend technologies like React, while
+                also developing robust backend systems with tools like Node.js
+                and MongoDB. My approach combines user-centric design with
+                clean, maintainable code to deliver scalable and
+                high-performance solutions. I thrive at the intersection of
+                design and functionality, continuously exploring new web
+                technologies, frameworks, and best practices to stay ahead in
+                the fast-evolving development landscape.
               </motion.p>
             </div>
           </div>
@@ -163,15 +173,15 @@ function App() {
               viewport={{ once: false }}
             >
               <div className="pro">
-                <img src="/Rockpaper.png" className="project-image" />
+                <img src="/edumorph.jpg" className="project-image" />
                 <div className="basic">
-                  <h2>CarbonTrack - AI Carbon Footprint Dashboard</h2>
+                  <h2>Edumorph - AI Student Helper</h2>
                   <br />
                   <p className="para">
-                    An AI-powered dashboard for tracking and reducing carbon
-                    emissions and personal carbon footprint.
+                    AI powered to help students summarize and create interactive quizes and mindmaps.
+                    Eduorph uses REACT,EXPRESS JS and large LLM to generate the content.
                   </p>
-                  <FontAwesomeIcon icon={faGithub} className="icon" />
+                 <a href="https://github.com/bluedream01/Edumorph"target="_blank"> <FontAwesomeIcon icon={faGithub} className="icon value" /> </a>
                 </div>
               </div>
             </motion.div>
@@ -182,16 +192,15 @@ function App() {
               viewport={{ once: false }}
             >
               <div className="pro">
-                <img src="/portfolio.png" className="project-image" />
+                <img src="/coffee.jpg" className="project-image" />
                 <div className="basic">
                   <h2 class="error">
-                    VerifyIQ - Academic Credential Verification
+                    Coffee Shop Website
                   </h2>
                   <p className="para">
-                    A decentralized platform for verifying academic credentials
-                    and predicting skills using AI.
+                    A Coffee Shop website where people can see details about the coffee Shop. HTML,CSS,JAVASCRIPT was used to create this website.
                   </p>
-                  <FontAwesomeIcon icon={faGithub} className="icon" />
+                  <a href="https://github.com/bluedream01/coffee-shop"target="_blank"><FontAwesomeIcon icon={faGithub} className="icon value" /></a>
                 </div>
               </div>
             </motion.div>
@@ -202,14 +211,13 @@ function App() {
               viewport={{ once: false }}
             >
               <div className="pro">
-                <img src="/clock.png" className="project-image" />
+                <img src="/tic-tac-toe.jpg" className="project-image" />
                 <div className="basic">
-                  <h2 class="error">Neurex - AI Mental Health Predictor</h2>
+                  <h2 class="error">Tic-Tac-Toe Website</h2>
                   <p className="para">
-                    A privacy-focused AI system for predicting mental health
-                    conditions using encrypted data.
+                     Tic-Tac-Toe serves as a foundational project that highlights interactive frontend development and engaging user experience design.
                   </p>
-                  <FontAwesomeIcon icon={faGithub} className="icon" />
+                   <a href="https://github.com/bluedream01/tic-tac-toe-2.0"target="_blank"><FontAwesomeIcon icon={faGithub} className="icon value" /></a>
                 </div>
               </div>
             </motion.div>
@@ -275,9 +283,9 @@ function App() {
             </div>
           </motion.div>
         </div>
-        <div className="Education"id="Education">
+        <div className="Education" id="Education">
           <motion.h2
-            className="About-text"
+            className="About-text academic"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -285,25 +293,88 @@ function App() {
           >
             Academic Journey
           </motion.h2>
-
+          <div className="Edu-timeline">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            >
+              <div className="Edu">
+                <h3 className="Edu-college">Bachelor's in Technology</h3>
+                <p className="Edu-branch">
+                  Institute of Engineering & Management
+                  <br />
+                  Electronics and Communication Engineering
+                  <br />
+                  2024 - Present
+                </p>
+              </div>
+              <div className="Edu-line"></div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            >
+              <div className="Edu">
+                <h3 className="Edu-college">Higher Secondary</h3>
+                <p className="Edu-branch">
+                  Baranagore Ramakrishna Mission Ashrama High School
+                  <br />
+                  WBCHSE Board
+                  <br />
+                  2023
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+        <div className="Contact" id="Contact">
+          <h2 class="About-text">Contact</h2>
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: false }}
           >
-            <div className="Edu">
-              <h3 className="Edu-college">Bachelor's in Technology</h3>
-              <p className="Edu-branch">
-                Institute of Engineering & Management
-                <br />
-                Electronics and Communication Engineering
-                <br />
-                2024 - Present
-              </p>
+            <div className="Contact-Details">
+              <div className="Email contact-form">
+                <div>
+                  <i className="fas fa-envelope icons"></i>
+                </div>
+                <div>
+                  <h3>Email</h3>
+                  <p>das05swpna@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="phone contact-form">
+                <div>
+                  <i className="fas fa-phone icons"></i>
+                </div>
+                <div>
+                  <h3>Phone</h3>
+                  <p>9831224335</p>
+                </div>
+              </div>
+
+              <div className="place contact-form">
+                <div>
+                  <i className="fas fa-map-marker-alt icons"></i>
+                </div>
+                <div>
+                  <h3>Place</h3>
+                  <p>Baranagore, Kolkata, India</p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
+        <footer className="footer">
+          <p><span>&copy;</span>2025 Swpnanil Das.All Rights reserved</p>
+        </footer>
       </div>
     </>
   );
