@@ -15,6 +15,7 @@ body {
   color: white;
   background-color: black;
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 body {
   cursor: url(/cursorupdate.png) 0 0, auto;
@@ -412,6 +413,15 @@ a {
 
 /* responsive */
 @media screen and (max-width: 999px) {
+   html, body {
+    overflow-y: scroll; /* allow scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  }
+
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
   .navbar {
     /* flex-direction: column;
     align-items: center;
@@ -569,6 +579,15 @@ a {
   }
 } */
 @media screen and (min-width: 1000px) and (max-width: 1453px) {
+   html, body {
+    overflow-y: scroll; /* allow scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  }
+
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
   .About-details {
     display: flex;
     flex-direction: column;
