@@ -16,6 +16,7 @@ import {
   faGithub,
   faReact,
   faPython,
+  faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons";
 import VariableProximity from "./blocks/TextAnimations/VariableProximity/VariableProximity";
 
@@ -84,6 +85,12 @@ function App() {
             />  */}
             <div ref={containerRef} style={{ position: "relative" }}>
               <h2 className="hero-title">HI, I'M</h2>
+               {/* <motion.div
+              initial={{ opacity: 0, y: +50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            > */}
               <VariableProximity
                 label={"Swpnanil Das"}
                 className={"variable-proximity-demo hero-name"}
@@ -93,12 +100,42 @@ function App() {
                 radius={100}
                 falloff="linear"
               />
+              {/* </motion.div> */}
             </div>
             {/* <h1 className="hero-name">SWPNANIL DAS</h1> */}
             <p className="hero-details">
               Blending Art, Code, and AI to shape tomorrow’s digital world.
               Pushing the boundaries of creativity with code and cognition.
             </p>
+            
+            <div className="Button-Class">
+              <motion.div
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            >
+              <a href="https://github.com/bluedream01" target="_blank">
+                <div className="hero-button">
+                  <FontAwesomeIcon icon={faGithub} />
+                  <span className="hide">Github</span>
+                </div>
+              </a>
+              </motion.div>
+               <motion.div
+              initial={{ opacity: 0, x: +10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+            >
+              <a href="https://www.linkedin.com/in/swpnanil-das-8ab2b7311/" target="_blank">
+                <div className="hero-button">
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+                  <span className="hide">Linkedin</span>
+                </div>
+              </a>
+              </motion.div>
+            </div>
           </div>
           {/* </LetterGlitch> */}
           {/* </GlareHover> */}
@@ -178,10 +215,20 @@ function App() {
                   <h2>Edumorph - AI Student Helper</h2>
                   <br />
                   <p className="para">
-                    AI powered to help students summarize and create interactive quizes and mindmaps.
-                    Eduorph uses REACT,EXPRESS JS and large LLM to generate the content.
+                    AI powered to help students summarize and create interactive
+                    quizes and mindmaps. Eduorph uses REACT,EXPRESS JS and large
+                    LLM to generate the content.
                   </p>
-                 <a href="https://github.com/bluedream01/Edumorph"target="_blank"> <FontAwesomeIcon icon={faGithub} className="icon value" /> </a>
+                  <a
+                    href="https://github.com/bluedream01/Edumorph"
+                    target="_blank"
+                  >
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      className="icon value"
+                    />{" "}
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -194,13 +241,18 @@ function App() {
               <div className="pro">
                 <img src="/coffee.jpg" className="project-image" />
                 <div className="basic">
-                  <h2 class="error">
-                    Coffee Shop Website
-                  </h2>
+                  <h2 class="error">Coffee Shop Website</h2>
                   <p className="para">
-                    A Coffee Shop website where people can see details about the coffee Shop. HTML,CSS,JAVASCRIPT was used to create this website.
+                    A Coffee Shop website where people can see details about the
+                    coffee Shop. HTML,CSS,JAVASCRIPT was used to create this
+                    website.
                   </p>
-                  <a href="https://github.com/bluedream01/coffee-shop"target="_blank"><FontAwesomeIcon icon={faGithub} className="icon value" /></a>
+                  <a
+                    href="https://github.com/bluedream01/coffee-shop"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faGithub} className="icon value" />
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -215,9 +267,16 @@ function App() {
                 <div className="basic">
                   <h2 class="error">Tic-Tac-Toe Website</h2>
                   <p className="para">
-                     Tic-Tac-Toe serves as a foundational project that highlights interactive frontend development and engaging user experience design.
+                    Tic-Tac-Toe serves as a foundational project that highlights
+                    interactive frontend development and engaging user
+                    experience design.
                   </p>
-                   <a href="https://github.com/bluedream01/tic-tac-toe-2.0"target="_blank"><FontAwesomeIcon icon={faGithub} className="icon value" /></a>
+                  <a
+                    href="https://github.com/bluedream01/tic-tac-toe-2.0"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faGithub} className="icon value" />
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -373,7 +432,9 @@ function App() {
           </motion.div>
         </div>
         <footer className="footer">
-          <p><span>&copy;</span>2025 Swpnanil Das.All Rights reserved</p>
+          <p>
+            <span>&copy;</span>2025 Swpnanil Das.All Rights reserved
+          </p>
         </footer>
       </div>
     </>
